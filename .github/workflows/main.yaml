@@ -1,1 +1,17 @@
 name: JAVA CI PIPELINE
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check the code 
+        uses: action/checkout@v2
+      - name: Build with gradle 
+        uses: ./gradlew build  
