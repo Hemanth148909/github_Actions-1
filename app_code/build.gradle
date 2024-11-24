@@ -1,0 +1,27 @@
+plugins {
+    id 'java'  // Apply the Java plugin for compiling Java code
+}
+
+group = 'com.example'  // The group ID for your project (usually your domain name or project name)
+version = '1.0-SNAPSHOT'  // The version of your project
+
+repositories {
+    mavenCentral()  // Use Maven Central to fetch dependencies
+}
+
+dependencies {
+    // JUnit dependency for testing purposes (you can remove it if you don't plan to write tests)
+    testImplementation 'junit:junit:4.13'
+}
+
+tasks.test {
+    useJUnitPlatform()  // JUnit 5 support (optional)
+}
+
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'HelloWorld'  // Define the entry point for the project (your main class)
+        )
+    }
+}
