@@ -1,0 +1,29 @@
+# Ignore system and user files
+AppData/
+Contacts/
+Desktop/
+Documents/
+Downloads/
+Favorites/
+Links/
+Music/
+OneDrive*/
+Pictures/
+Saved Games/
+Searches/
+Videos/
+VirtualBox VMs/
+NTUSER.DAT*
+ntuser.ini
+setup.exe
+battery-report.html
+.gradle/
+.vscode/
+eclipse*/
+**/*.exe
+**/*.xml
+
+# Ignore any other system or configuration files you don't need
+configuration-Office365-x64.xml
+hemanth/
+kubectl.exe
