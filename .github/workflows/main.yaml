@@ -7,20 +7,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out the source code
-        uses: actions/checkout@v3
+      - name: Create new directory
+      - run: mkdir hemanth
 
-      - name: List files in the repository
-        run: ls -la  # This will show the contents of the directory
+      - name: create file & cat 
+      - run: cd hemanth && touch kumar.txt
 
-      - name: Set up JDK 11
-        uses: actions/setup-java@v3
-        with:
-          java-version: '11'
-          distribution: 'temurin'
-
-      - name: Make Gradle wrapper executable
-        run: chmod +x gradlew  # Ensure gradlew has executable permissions
-
-      - name: Build with Gradle
-        run: ./gradlew build
+      - name: cat file 
+      - run: cat kumar.txt
