@@ -4,3 +4,4 @@ Hi, This is Hemanth!
 
 
   what can i do ??
+checking git reset
