@@ -8,10 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create new directory
-      - run: mkdir hemanth
+        run: mkdir hemanth
 
-      - name: create file & cat 
-      - run: cd hemanth && touch kumar.txt
+      - name: Create file inside directory
+        run: |
+          cd hemanth
+          touch kumar.txt
+          echo "I am Hemanth. I am learning shell scripting!!!" > kumar.txt
 
-      - name: cat file 
-      - run: cat kumar.txt
+      - name: Display file content
+        run: cat hemanth/kumar.txt
