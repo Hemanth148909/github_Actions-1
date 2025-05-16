@@ -7,3 +7,5 @@ Hi, This is Hemanth!
 
 
   adding 0ne more line 
+
+  adding 2nd line now modified !!! worked soft reset 
